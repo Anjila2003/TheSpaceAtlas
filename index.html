@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Website</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+  <!-- AOS CSS for animation -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+<!-- AOS JS for animation-->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+<body class="bg-black text-white">
+  <script>
+    AOS.init();
+  </script>
+   
+  <script src="main.js"></script>
+
+  <!-- Hero Section with Video Background -->
+  <div class=" h-[700px] relative overflow-hidden ">
+    <video 
+      src="./assets/earth-bg.mp4"
+      type="video/mp4"
+      
+      autoplay
+      loop
+      muted
+      class=" fixed top-0 left-0 w-full h-full object-cover z-[-1] "
+    ></video>
+
+    <!-- Navigation -->
+    <div data-aos="fade-down" class="fixed top-0 w-full z-90 bg-black/10 backdrop-blur-sm py-4">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-4 font-bold text-2xl text-white">
+            <img src="./assets/logo.png" alt="Logo" class="w-10">
+            <span>TheSpaceAtlas</span>
+          </div>
+          <ul class="flex items-center gap-6 text-xl text-white">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Galaxy</a></li>
+            <li><a href="#">Satellite</a></li>
+          </ul>
+          <button class="text-white border-2 border-white px-3 py-1 rounded-md">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Text Content -->
+    <div class="relative z-30 h-full flex items-center p-6">
+      <div class="container grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div class="space-y-6 lg:pr-20">
+          <h1 data-aos="fade-up"data-aos-delay="100" class="text-5xl font-bold uppercase">Orbit The Earth</h1>
+          <p data-aos="fade-up" data-aos-delay="300">
+            Experience the breathtaking view of Earth from orbit. Our platform explores
+            cutting-edge space technologies, satellite missions, and the wonders of our galaxy.
+          </p>
+          <button data-aos="fade-up" data-aos-delay="500" class="bg-white text-black px-5 py-2 rounded-md font-semibold hover:bg-gray-300 transition">
+            Learn More
+          </button>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <!-- Bottom Moon Image -->
+    <img
+      src="./assets/moon-surface-hd.png"
+      alt="Moon Surface"
+      class="absolute bottom-0 right-0 w-full brightness-50 z-10"
+    />
+    <div class="absolute bottom-0 w-full z-20 bg-gradient-to-b from-transparent to-black h-20 sm:h-32"></div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="bg-black text-white relative z-50 py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 relative z-50">
+        <!-- Service 1 -->
+        <div data-aos="fade-up" data-aos-delay="200" class="min-h-[180px] flex flex-col gap-2 justify-center items-center bg-sky-900/60 rounded-xl backdrop-blur-sm text-center text-2xl py-8 px-3 w-full mx-auto">
+          <span><img src="./assets/orbit.png" alt="Satellite" class="h-20 w-20"></span>
+          <h1>Satellite Monitoring</h1>
+          <p>Track real-time satellite movement across Earth's orbit.</p>
+          <p class="text-sm">High-accuracy data from global positioning systems.</p>
+        </div>
+        <!-- Service 2 -->
+        <div data-aos="fade-up" data-aos-delay="400" class="min-h-[180px] flex flex-col gap-2 justify-center items-center bg-sky-900/60 rounded-xl backdrop-blur-sm text-center text-2xl py-8 px-3 w-full mx-auto">
+          <span><img src="./assets/galaxy.png" alt="Galaxy" class="h-20 w-20"></span>
+          <h1>Galactic Exploration</h1>
+          <p>Discover new planets and star systems in the galaxy.</p>
+          <p class="text-sm">Interactive 3D models and simulations.</p>
+        </div>
+        <!-- Service 3 -->
+        <div data-aos="fade-up" data-aos-delay="600" class="min-h-[180px] flex flex-col gap-2 justify-center items-center bg-sky-900/60 rounded-xl backdrop-blur-sm text-center text-2xl py-8 px-3 w-full mx-auto">
+          <span><img src="./assets/business-startup.png" alt="Launch Systems" class="h-20 w-20"></span>
+          <h1>Launch Systems</h1>
+          <p>Learn how modern spacecrafts launch and land.</p>
+          <p class="text-sm">Powered by AI and real-time physics engines.</p>
+        </div>
+      </div>
+
+      <!-- Optional Wave Image -->
+      <img
+        src="./assets/wave.gif"
+        alt="Wave Decoration"
+        class="h-[200px] w-full object-cover mix-blend-screen -translate-y-24 relative z-0"
+      />
+    </div>
+  </div>
+
+  <!-- Mission Section Banner 1 -->
+  <div data-aos="fade-down" class="bg-black text-white pb-12 relative z-50   ">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+        <!-- Left Image -->
+        <div>
+          <img data-aos="zoom-in" data-aos-delay="300"
+            src="./assets/satelite1.jpg"
+            alt="Satellite"
+            class="w-full sm:w-[50%] mx-auto max-h-[350px] object-cover"
+          />
+        </div>
+        <!-- Right Text -->
+        <div class="space-y-3 xl:pr-36 p-4 border-r-2 border-b-2 border-r-sky-800 border-b-sky-800">
+          <p data-aos="fade-up" class="text-sky-800 uppercase">Our Mission</p>
+          <h1 data-aos="fade-up" data-aos-delay="300" class="uppercase text-5xl">Rapidcast</h1>
+          <p data-aos="fade-up" data-aos-delay="500">
+            Rapidcast delivers real-time satellite insights for Earth observation,
+            supporting science, safety, and exploration. We aim to bridge space
+            technologies with real-world applications that impact lives every day.
+          </p>
+          <button data-aos="fade-up" data-aos-delay="700" class="bg-sky-800 hover:bg-sky-600 text-white px-5 py-2 rounded-md font-semibold transition">
+            Learn More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+  
+
+  <!-- Mission Section Banner 2 -->
+  <div class="bg-black text-white pb-12 relative z-50">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 items-center">
+        <!-- Left Text -->
+        <div class="space-y-3 xl:pr-36 p-4 border-l-2 border-b-2 border-l-sky-800 border-b-sky-800">
+          <p data-aos="fade-up" class="text-sky-800 uppercase">Our Mission</p>
+          <h1  data-aos="fade-up" data-aos-delay="300" class="uppercase text-5xl">Empowering Earth with Data</h1>
+          <p data-aos="fade-up" data-aos-delay="500">
+            We also strive to make satellite data more accessible and actionable for governments,
+            researchers, and organizations worldwide—empowering decision-making in disaster response,
+            agriculture, climate change, and urban development.
+          </p>
+          <button data-aos="fade-up" data-aos-delay="700" class="bg-sky-800 hover:bg-sky-600 text-white px-5 py-2 rounded-md font-semibold transition">
+            Learn More
+          </button>
+        </div>
+        <!-- Right Image -->
+        <div>
+          <img data-aos="zoom-in" data-aos-delay="300"
+            src="./assets/satelite2.jpg"
+            alt="Satellite"
+            class="w-full sm:w-[50%] mx-auto max-h-[350px] object-cover mt-8"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <div class="bg-gray-800 text-white px-5 relative z-50 ">
+    <section class="max-w-[1200px] mx-auto text-white">
+      <div class="grid md:grid-cols-3 py-5">
+        <!-- first col -->
+        <div class="py-8 px-4">
+          <h1 class="text-xl sm:text-3xl font-bold sm:text-left text-justify mb-3">
+            Be Ready To Grow
+          </h1>
+          <p>
+            Get Exclusive <span class="font-bold">Update</span>
+            straight to your inbox.
+          </p>
+          <br />
+          <div class="flex items-center h-10">
+            <input
+              type="text"
+              class="py-1 px-3 w-full h-[100%] inline-block focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 bg-gray-800 border-gray-200 border-2"
+              placeholder="Email"
+            />
+            <button class="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-400 focus:outline-none">OK</button>
+          </div>
+        </div>
+
+        <!-- second col -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 col-span-2 md:pl-10">
+          <div>
+            <div class="py-8 px-4">
+              <h1 class="text-xl font-bold mb-3">Important Links</h1>
+              <ul class="flex flex-col gap-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="py-8 px-4">
+              <h1 class="text-xl font-bold mb-3">Quick Links</h1>
+              <ul class="flex flex-col gap-3">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="py-8 px-4">
+              <h1 class="text-xl font-bold mb-2">Contact Us</h1>
+            </div>
+            <div class="space-y-3">
+              <div class="flex items-center gap-2">
+                <span class="inline-block w-5 h-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-full h-full text-sky-500">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C8.134 2 5 5.134 5 9c0 3.866 7 11 7 11s7-7.134 7-11c0-3.866-3.134-7-7-7z"></path>
+                  </svg>
+                </span>
+                <p>Chittagong, Bangladesh</p>
+              </div>
+              <div class="flex items-center gap-3 mt-3">
+                <!-- Icon for email -->
+                <i class="fas fa-envelope text-sky-500"></i>
+                <p>abc@gmail.com</p>
+              </div>
+              <div class="flex items-center gap-3 mt-3">
+                <!-- Icon for phone -->
+                <i class="fas fa-phone-alt text-sky-500"></i>
+                <p>+91 123456789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- bottom section -->
+      <div class="hidden sm:block">
+        <div class="flex justify-between items-center py-6 border-t-2 border-gray-400">
+          <span class="text-sm text-gray-400">
+            copyright &copy; 2025 niha, naznin , zarin
+          </span>
+          <div class="flex items-center justify-center gap-4 pb-4">
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram text-4xl"></i>
+            </a>
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook text-4xl"></i>
+            </a>
+            <a href="https://www.linkedin.com">
+              <i class="fab fa-linkedin text-4xl"></i>
+            </a>
+          </div>
+          <span class="text-sm text-gray-400">
+            <ul class="flex gap-3">
+              <li>Privacy Policy</li>
+              <li>Terms & Conditions</li>
+            </ul>
+          </span>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+</body>
+</html>
